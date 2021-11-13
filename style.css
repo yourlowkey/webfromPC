@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+nav {
+   position :fixed; 
+   z-index: 10;
+   background-color: #3e65da;
+   height: 100px;
+   width: 100%;
+   font-family: 'Montserrat',sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   top: 0;
+}
+#nav-link {
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 60%;
+    height: 100%;
+}
+  
+#nav-link li{ 
+    list-style: none;
+}
+#nav-link a{
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 16;
+    text-decoration: none;
+}
+p {
+    font-weight: 100;
+}
+ #banner {
+     position: relative;
+     margin-top: 100px;
+     background-image: url(" https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png") ;
+     height: 600px;
+     background-position: center; 
+     background-repeat: no-repeat; 
+     background-size: 100%; 
+ }
+ #banner-text{
+     position: absolute;   
+     margin-top : 8%;
+     margin-left : 70px;   
+ }
+ #banner-text h1 {
+    color :white;
+     font-family :Georgia, 'Times New Roman', Times, serif ;
+     font-weight: 550 ;    
+ }
+ #footer h3 {
+    font-family :Georgia, 'Times New Roman', Times, serif ;
+    font-weight: 550 ;    
+ }
+ #banner-text p {
+     color :white ;
+     font-size : 130% ;
+ }
+ #main-content h2 {
+    font-family :Georgia, 'Times New Roman', Times, serif ;
+    font-weight: 550 ;    
+ }
+ #main-content{
+    background-color: rgb(199, 199, 199);
+    padding-left:50px ;
+    padding-right:50px;
+    margin-top :-10px ;
+    padding-top: 20px;
+ }
+ #image{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+ }
+ .column{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+ }
+.image1 {
+    margin-bottom: 48px;
+}
+ div img {
+    width: 100%;
+ }
+  #footer {
+    background-color:beige;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+    padding-left:50px ;
+    padding-right:50px;
+ }
+
+ @media only screen and (max-width: 992px) and (min-width: 768px) {
+    #image{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
+     #footer {
+        grid-template-columns: 1fr;
+     }
+     #banner {
+         height: 300px;
+         background-image: none;
+     }
+     #banner-text p {
+        color: rgb(0, 0, 0);
+        font-size: 100% ;
+    }
+    #banner-text h1 {
+        color: rgb(0, 0, 0);
+        font-family :Georgia, 'Times New Roman', Times, serif ;
+        font-weight: 550 ;    
+     }
+ }
+ @media only screen and (max-width: 768px) {
+    #image{
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+     #footer {
+        grid-template-columns: 1fr;
+     }
+     #banner {
+        height: 300px;
+        background-image: none;
+    }
+    #banner-text{
+        width: 70%;
+        margin-top: 8%;
+        margin-left: 70px;   
+    }
+    #banner-text p {
+        color: rgb(0, 0, 0);
+        font-size: 100% ;
+    }
+    #banner-text h1 {
+        color: rgb(0, 0, 0);
+        font-family :Georgia, 'Times New Roman', Times, serif ;
+        font-weight: 550 ;    
+     }
+ }
