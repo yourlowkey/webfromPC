@@ -43,7 +43,7 @@ p {
  #banner {
      position: relative;
      margin-top: 100px;
-     background-image: url(" https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png") ;
+     background-image: url("image/vietnam-travel-banner.jpg") ;
      height: 600px;
      background-position: center; 
      background-repeat: no-repeat; 
@@ -51,11 +51,11 @@ p {
  }
  #banner-text{
      position: absolute;   
-     margin-top : 8%;
+     
      margin-left : 70px;   
  }
  #banner-text h1 {
-    color :white;
+    color :rgb(0, 9, 34);
      font-family :Georgia, 'Times New Roman', Times, serif ;
      font-weight: 550 ;    
  }
@@ -64,7 +64,7 @@ p {
     font-weight: 550 ;    
  }
  #banner-text p {
-     color :white ;
+     color :rgb(0, 9, 34);
      font-size : 130% ;
  }
  #main-content h2 {
@@ -87,9 +87,9 @@ p {
     padding-right: 25px;
     padding-bottom: 50px;
  }
-.image1 {
-    margin-bottom: 48px;
-}
+ .image1{
+     height: 68%;
+ }
  div img {
     width: 100%;
  }
